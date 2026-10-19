@@ -6,7 +6,6 @@
 <title>Senova Tech — Qurbonov Muhammadsharif</title>
 <style>
 :root{--bg:#f6fbf8;--card:#fff;--tx:#0f2a24;--mut:#5b726b;--g:#10b981;--b:#2563eb;--bd:#e0ede8;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1613;--card:#12221d;--tx:#e8f5f0;--mut:#93aaa2;--bd:#1f3a32;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#0b1613;--card:#12221d;--tx:#e8f5f0;--mut:#93aaa2;--bd:#1f3a32;color-scheme:dark}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
@@ -57,10 +56,10 @@ p{color:var(--mut)}
 .sk{display:flex;gap:8px;flex-wrap:wrap}.sk span{padding:6px 14px;border-radius:99px;background:var(--card);border:1px solid var(--bd);font-size:14px;transition:.2s}.sk span:hover{background:var(--g);color:#fff}
 .steps{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.steps div{flex:1;min-width:140px;text-align:center;padding:14px;border-radius:14px;background:var(--card);border:1px dashed var(--g);font-weight:600}
 footer{text-align:center;color:var(--mut);font-size:13px;padding:20px}
-.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin:18px 0}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:18px;margin:18px 0}
 .shots figure{margin:0;background:var(--card);border:1px solid var(--bd);border-radius:16px;overflow:hidden;transition:.3s}
 .shots figure:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(37,99,235,.2)}
-.shots img{width:100%;display:block;height:auto}
+.shots img{width:100%;display:block;height:auto;cursor:zoom-in}
 .shots figcaption{padding:10px 14px;font-size:14px;color:var(--mut)}
 @media(max-width:760px){.hero{grid-template-columns:1fr}.av{order:-1;width:160px;font-size:42px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -103,7 +102,7 @@ footer{text-align:center;color:var(--mut);font-size:13px;padding:20px}
 <script>
 var NM={ru:"Курбонов Мухаммадшариф",tg:"Қурбонов Муҳаммадшариф",en:"Qurbonov Muhammadsharif"};
 var T={
-ru:{nav:["Главная","Проекты","Услуги","Обо мне","Контакты"],badge:"Открыт для фриланса и постоянной работы",h1:"Telegram-боты, приложения и сайты —",h1g:"всё, что упрощает вашу работу",hp:"Я программист из Душанбе. Создаю решения под ключ: от идеи до запуска.",order:"Заказать проект",cv:"Резюме и опыт",tg:"Написать в Telegram",
+ru:{nav:["Главная","Проекты","Услуги","Обо мне","Контакты"],badge:"Открыт для фриланса и постоянной работы",h1:"Telegram-боты, приложения и сайты\u00a0—",h1g:"всё, что упрощает вашу работу",hp:"Я программист из Душанбе. Создаю решения под ключ: от идеи до запуска.",order:"Заказать проект",cv:"Резюме и опыт",tg:"Написать в Telegram",
 st:[["5+","лет опыта"],["3+","проекта"],["4","направления"]],
 dirs:[["🤖","Telegram-боты","Продажи, поддержка, уведомления на Python"],["⚙️","Автоматизация","Убираю рутину и экономлю ваше время"],["📱","Flutter-приложения","Android и iOS из одной кодовой базы"],["🌐","Веб-сайты","Сайты и админ-панели высокого уровня"]],
 ch:"Есть идея? Давайте реализуем",cp:"Напишите — обсудим задачу и сроки.",
@@ -114,7 +113,7 @@ svc:[["🤖","Telegram-боты","Боты для продаж, заказов, 
 steps:["1. Задача","2. Реализация","3. Сдача проекта"],
 at:"Обо мне",story:"Я начал программировать в 11 классе и сегодня имею около 5 лет практического опыта. Создаю Telegram-ботов, автоматизацию, мобильные приложения и сайты.",edh:"Образование",edu:"Международный университет туризма и предпринимательства Таджикистана. Год рождения: 2005.",skh:"Навыки",dl:"Скачать резюме (скоро)",
 ct:"Контакты",ctp:"Свяжитесь удобным способом — отвечу быстро.",loc:"Душанбе, Таджикистан"},
-tg:{nav:["Асосӣ","Проектҳо","Хизматҳо","Дар бораи ман","Тамос"],badge:"Барои фриланс ва кори доимӣ омодаам",h1:"Ботҳои Telegram, барномаҳо ва сайтҳо —",h1g:"ҳар чизе, ки корро осон мекунад",hp:"Ман барномасоз аз Душанбе ҳастам. Ҳалли пурра месозам: аз идея то оғози кор.",order:"Супориш диҳед",cv:"Резюме ва таҷриба",tg:"Дар Telegram нависед",
+tg:{nav:["Асосӣ","Проектҳо","Хизматҳо","Дар бораи ман","Тамос"],badge:"Барои фриланс ва кори доимӣ омодаам",h1:"Ботҳои Telegram, барномаҳо ва сайтҳо\u00a0—",h1g:"ҳар чизе, ки корро осон мекунад",hp:"Ман барномасоз аз Душанбе ҳастам. Ҳалли пурра месозам: аз идея то оғози кор.",order:"Супориш диҳед",cv:"Резюме ва таҷриба",tg:"Дар Telegram нависед",
 st:[["5+","сол таҷриба"],["3+","проект"],["4","самт"]],
 dirs:[["🤖","Ботҳои Telegram","Фурӯш, дастгирӣ ва огоҳӣ бо Python"],["⚙️","Автоматизатсия","Корҳои такрориро кам мекунам"],["📱","Барномаҳои Flutter","Android ва iOS аз як код"],["🌐","Вебсайтҳо","Сайт ва админ-панел дар сатҳи олӣ"]],
 ch:"Идея доред? Якҷоя иҷро мекунем",cp:"Нависед — масъала ва муҳлатро муҳокима мекунем.",
@@ -125,7 +124,7 @@ svc:[["🤖","Ботҳои Telegram","Боти фурӯш, фармоиш, да�
 steps:["1. Масъала","2. Иҷро","3. Таҳвил"],
 at:"Дар бораи ман",story:"Ман барномасозиро дар синфи 11 оғоз кардам ва тақрибан 5 сол таҷрибаи амалӣ дорам. Ботҳои Telegram, автоматизатсия, барномаҳои мобилӣ ва вебсайтҳо месозам.",edh:"Таҳсилот",edu:"Донишгоҳи байналмилалии сайёҳӣ ва соҳибкории Тоҷикистон. Соли таваллуд: 2005.",skh:"Малакаҳо",dl:"Боргирии резюме (ба зудӣ)",
 ct:"Тамос",ctp:"Бо роҳи қулай тамос гиред — зуд ҷавоб медиҳам.",loc:"Душанбе, Тоҷикистон"},
-en:{nav:["Home","Projects","Services","About","Contact"],badge:"Open to freelance and full-time work",h1:"Telegram bots, apps and websites —",h1g:"anything that makes your work easier",hp:"I’m a developer from Dushanbe. I build complete solutions, from idea to launch.",order:"Order a project",cv:"Resume & experience",tg:"Message on Telegram",
+en:{nav:["Home","Projects","Services","About","Contact"],badge:"Open to freelance and full-time work",h1:"Telegram bots, apps and websites\u00a0—",h1g:"anything that makes your work easier",hp:"I’m a developer from Dushanbe. I build complete solutions, from idea to launch.",order:"Order a project",cv:"Resume & experience",tg:"Message on Telegram",
 st:[["5+","years of experience"],["3+","projects"],["4","directions"]],
 dirs:[["🤖","Telegram bots","Sales, support and notifications in Python"],["⚙️","Automation","I remove routine and save your time"],["📱","Flutter apps","Android and iOS from one codebase"],["🌐","Websites","High-level sites and admin panels"]],
 ch:"Got an idea? Let’s build it",cp:"Message me and we’ll discuss the task and timeline.",
@@ -168,7 +167,8 @@ function G(){var h=(location.hash||"#home").slice(1);if(!$("#"+h))h="home";
 document.querySelectorAll(".pg").forEach(function(s){s.classList.toggle("on",s.id===h)});
 document.querySelectorAll("nav a").forEach(function(a){a.classList.toggle("on",a.dataset.p===h)});window.scrollTo(0,0)}
 document.querySelectorAll(".tools [data-l]").forEach(function(b){b.onclick=function(){L=b.dataset.l;try{localStorage.setItem("lang",L)}catch(e){}R()}});
-$("#th").onclick=function(){var r=document.documentElement,d=r.dataset.theme==="dark"||(!r.dataset.theme&&matchMedia("(prefers-color-scheme:dark)").matches);r.dataset.theme=d?"light":"dark"};
+$("#th").onclick=function(){var r=document.documentElement,d=r.dataset.theme==="dark";r.dataset.theme=d?"light":"dark"};
+document.addEventListener("click",function(e){var i=e.target.closest&&e.target.closest(".shots img");if(!i)return;var o=document.createElement("div");o.style.cssText="position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:99;display:grid;place-items:center;padding:16px;cursor:zoom-out";o.innerHTML='<img src="'+i.src+'" style="max-width:100%;max-height:100%;border-radius:12px">';o.onclick=function(){o.remove()};document.body.appendChild(o)});
 window.onhashchange=G;R();
 </script>
 </body>
