@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6fbf8">
+<meta name="description" content="Senova Tech — Telegram-боты, веб-сайты и мобильные приложения. Разработка цифровых решений в Душанбе, Таджикистан.">
 <title>Senova Tech — Qurbonov Muhammadsharif</title>
 <style>
 :root{--bg:#f6fbf8;--card:#fff;--tx:#0f2a24;--mut:#5b726b;--g:#10b981;--b:#2563eb;--bd:#e0ede8;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -20,7 +22,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:col
 .bar{max-width:1050px;margin:auto;padding:10px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .logo{font-weight:800;font-size:19px;color:var(--tx);text-decoration:none;margin-right:auto}
 .logo b{background:linear-gradient(90deg,var(--g),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
-nav{display:flex;gap:4px;overflow-x:auto;max-width:100%}
+nav{display:flex;gap:4px;overflow-x:auto;max-width:100%;scrollbar-width:none;-ms-overflow-style:none}nav::-webkit-scrollbar{display:none}
 nav a{padding:6px 12px;border-radius:99px;color:var(--mut);text-decoration:none;font-size:14px;white-space:nowrap;transition:.2s}
 nav a:hover,nav a.on{background:var(--g);color:#fff}
 .tools{display:flex;gap:4px}
@@ -61,7 +63,7 @@ footer{text-align:center;color:var(--mut);font-size:13px;padding:20px}
 .shots figure:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(37,99,235,.2)}
 .shots img{width:100%;display:block;height:auto;cursor:zoom-in}
 .shots figcaption{padding:10px 14px;font-size:14px;color:var(--mut)}
-@media(max-width:760px){.hero{grid-template-columns:1fr}.av{order:-1;width:160px;font-size:42px}}
+@media(max-width:760px){.bar{gap:10px;padding:12px 16px}.logo{width:100%;margin-right:0}nav{width:100%;padding-bottom:2px}nav a{padding:7px 12px}.tools{width:100%;gap:6px}.hero{grid-template-columns:1fr;gap:18px}.av{order:-1;width:160px;font-size:42px}main{padding:20px 16px 40px}.st{gap:8px}.st div{padding:12px 4px}.st b{font-size:25px}.cta{padding:28px 16px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -69,8 +71,8 @@ footer{text-align:center;color:var(--mut);font-size:13px;padding:20px}
 <div class="blob b1"></div><div class="blob b2"></div>
 <header><div class="bar">
 <a class="logo" href="#home">Senova <b>Tech</b></a>
-<nav id="nav"></nav>
-<div class="tools"><button data-l="ru">RU</button><button data-l="tg">TJ</button><button data-l="en">EN</button><button id="th">🌓</button></div>
+<nav id="nav" aria-label="Основная навигация"></nav>
+<div class="tools"><button data-l="ru">RU</button><button data-l="tg">TJ</button><button data-l="en">EN</button><button id="th" type="button" aria-label="Переключить светлую и тёмную тему" title="Переключить тему">🌓</button></div>
 </div></header>
 <main>
 <section class="pg" id="home">
@@ -89,7 +91,7 @@ footer{text-align:center;color:var(--mut);font-size:13px;padding:20px}
 <section class="pg" id="about"><h2 data-i="at"></h2><p data-i="story"></p>
 <div class="card" style="margin:18px 0"><h3 data-i="edh"></h3><p data-i="edu"></p></div>
 <h3 data-i="skh"></h3><div class="sk" id="sk"></div>
-<div class="btns"><a class="btn p" href="#" data-i="dl" onclick="return false"></a></div></section>
+<div class="btns"><a class="btn p" href="#contact" data-i="dl"></a></div></section>
 <section class="pg" id="contact"><h2 data-i="ct"></h2><p data-i="ctp"></p>
 <div class="grid">
 <a class="card" style="text-decoration:none;color:inherit" href="https://t.me/m_qurbonov10" target="_blank" rel="noopener"><div class="ic">✈️</div><h3>Telegram</h3><p>@m_qurbonov10</p></a>
@@ -103,37 +105,37 @@ footer{text-align:center;color:var(--mut);font-size:13px;padding:20px}
 var NM={ru:"Курбонов Мухаммадшариф",tg:"Қурбонов Муҳаммадшариф",en:"Qurbonov Muhammadsharif"};
 var T={
 ru:{nav:["Главная","Проекты","Услуги","Обо мне","Контакты"],badge:"Открыт для фриланса и постоянной работы",h1:"Telegram-боты, приложения и сайты\u00a0—",h1g:"всё, что упрощает вашу работу",hp:"Я программист из Душанбе. Создаю решения под ключ: от идеи до запуска.",order:"Заказать проект",cv:"Резюме и опыт",tg:"Написать в Telegram",
-st:[["5+","лет опыта"],["3+","проекта"],["4","направления"]],
-dirs:[["🤖","Telegram-боты","Продажи, поддержка, уведомления на Python"],["⚙️","Автоматизация","Убираю рутину и экономлю ваше время"],["📱","Flutter-приложения","Android и iOS из одной кодовой базы"],["🌐","Веб-сайты","Сайты и админ-панели высокого уровня"]],
+st:[["5","проектов"],["4","направления"],["3","языка сайта"]],
+dirs:[["🤖","Telegram-боты","Боты для задач бизнеса на Python"],["⚙️","Автоматизация","Помогаю сократить повторяющиеся задачи"],["📱","Flutter-приложения","Мобильные приложения на Flutter"],["🌐","Веб-сайты","Сайты и админ-панели для бизнеса"]],
 ch:"Есть идея? Давайте реализуем",cp:"Напишите — обсудим задачу и сроки.",
 pt:"Проекты",pp:"Избранные работы. Новые проекты добавляются.",soon:"Ссылка скоро",visit:"Открыть сайт",
 pr:[["📦","WarePro","Flutter","Мобильное приложение для автоматизации оптового бизнеса: учёт от поступления товара до отгрузки.",["Flutter","Mobile"],0],["🧠","Intellect Arena","Flutter","Образовательная игра для молодёжи: развивает знания и позволяет устраивать соревнования между друзьями.",["Flutter","Game"],0],["🏠","imkon.estate","Веб","Сайт для купли-продажи недвижимости с полноценной админ-панелью.",["Web","Admin panel"],"https://imkon.estate"]],
 sv:"Услуги",sp:"Как я могу быть полезен",
 svc:[["🤖","Telegram-боты","Боты для продаж, заказов, поддержки и рассылок."],["⚙️","Автоматизация","Автоматизация бизнес-процессов и рутинных задач."],["📱","Мобильные приложения","Приложения на Flutter для Android и iOS."],["🌐","Веб-сайты","Лендинги, корпоративные сайты, админ-панели."],["✨","И не только","Любое решение, которое облегчит вашу работу."]],
 steps:["1. Задача","2. Реализация","3. Сдача проекта"],
-at:"Обо мне",story:"Я начал программировать в 11 классе и сегодня имею около 5 лет практического опыта. Создаю Telegram-ботов, автоматизацию, мобильные приложения и сайты.",edh:"Образование",edu:"Международный университет туризма и предпринимательства Таджикистана. Год рождения: 2005.",skh:"Навыки",dl:"Скачать резюме (скоро)",
+at:"Обо мне",story:"Я разработчик из Душанбе. Создаю Telegram-ботов, автоматизирую задачи, разрабатываю мобильные приложения и веб-сайты. В работе стремлюсь к понятным и практичным решениям.",edh:"Образование",edu:"Международный университет туризма и предпринимательства Таджикистана.",skh:"Навыки",dl:"Связаться со мной",
 ct:"Контакты",ctp:"Свяжитесь удобным способом — отвечу быстро.",loc:"Душанбе, Таджикистан"},
 tg:{nav:["Асосӣ","Проектҳо","Хизматҳо","Дар бораи ман","Тамос"],badge:"Барои фриланс ва кори доимӣ омодаам",h1:"Ботҳои Telegram, барномаҳо ва сайтҳо\u00a0—",h1g:"ҳар чизе, ки корро осон мекунад",hp:"Ман барномасоз аз Душанбе ҳастам. Ҳалли пурра месозам: аз идея то оғози кор.",order:"Супориш диҳед",cv:"Резюме ва таҷриба",tg:"Дар Telegram нависед",
-st:[["5+","сол таҷриба"],["3+","проект"],["4","самт"]],
-dirs:[["🤖","Ботҳои Telegram","Фурӯш, дастгирӣ ва огоҳӣ бо Python"],["⚙️","Автоматизатсия","Корҳои такрориро кам мекунам"],["📱","Барномаҳои Flutter","Android ва iOS аз як код"],["🌐","Вебсайтҳо","Сайт ва админ-панел дар сатҳи олӣ"]],
+st:[["5","лоиҳа"],["4","самт"],["3","забони сомона"]],
+dirs:[["🤖","Ботҳои Telegram","Ботҳо барои масъалаҳои бизнес бо Python"],["⚙️","Автоматизатсия","Коҳиш додани корҳои такрорӣ"],["📱","Барномаҳои Flutter","Барномаҳои мобилӣ бо Flutter"],["🌐","Вебсайтҳо","Сайт ва админ-панел барои бизнес"]],
 ch:"Идея доред? Якҷоя иҷро мекунем",cp:"Нависед — масъала ва муҳлатро муҳокима мекунем.",
 pt:"Проектҳо",pp:"Корҳои беҳтарин. Проектҳои нав илова мешаванд.",soon:"Линк ба зудӣ",visit:"Сайтро кушоед",
 pr:[["📦","WarePro","Flutter","Барномаи мобилӣ барои автоматизатсияи бизнеси оптовӣ: аз омадани бор то рафтани он ҳама ҳисоб мешавад.",["Flutter","Mobile"],0],["🧠","Intellect Arena","Flutter","Бозии илмӣ барои ҷавонон: дониш меафзояд ва байни худ мусобиқа ташкил кардан мумкин аст.",["Flutter","Game"],0],["🏠","imkon.estate","Веб","Вебсайт барои хариду фурӯши хонаҳо бо админ-панели пурра.",["Web","Admin panel"],"https://imkon.estate"]],
 sv:"Хизматҳо",sp:"Чӣ тавр метавонам кумак кунам",
 svc:[["🤖","Ботҳои Telegram","Боти фурӯш, фармоиш, дастгирӣ ва ирсоли паём."],["⚙️","Автоматизатсия","Автоматикунонии равандҳо ва корҳои такрорӣ."],["📱","Барномаҳои мобилӣ","Барномаҳои Flutter барои Android ва iOS."],["🌐","Вебсайтҳо","Лендинг, сайти корӣ ва админ-панел."],["✨","Ва ғайра","Ҳар ҳалле, ки корро осон кунад."]],
 steps:["1. Масъала","2. Иҷро","3. Таҳвил"],
-at:"Дар бораи ман",story:"Ман барномасозиро дар синфи 11 оғоз кардам ва тақрибан 5 сол таҷрибаи амалӣ дорам. Ботҳои Telegram, автоматизатсия, барномаҳои мобилӣ ва вебсайтҳо месозам.",edh:"Таҳсилот",edu:"Донишгоҳи байналмилалии сайёҳӣ ва соҳибкории Тоҷикистон. Соли таваллуд: 2005.",skh:"Малакаҳо",dl:"Боргирии резюме (ба зудӣ)",
+at:"Дар бораи ман",story:"Ман барномасоз аз Душанбе ҳастам. Ботҳои Telegram месозам, вазифаҳоро автоматӣ мекунам ва барномаҳои мобилӣ ва вебсайтҳо таҳия менамоям. Ҳадафам сохтани ҳалҳои фаҳмо ва амалӣ аст.",edh:"Таҳсилот",edu:"Донишгоҳи байналмилалии сайёҳӣ ва соҳибкории Тоҷикистон.",skh:"Малакаҳо",dl:"Бо ман тамос гиред",
 ct:"Тамос",ctp:"Бо роҳи қулай тамос гиред — зуд ҷавоб медиҳам.",loc:"Душанбе, Тоҷикистон"},
 en:{nav:["Home","Projects","Services","About","Contact"],badge:"Open to freelance and full-time work",h1:"Telegram bots, apps and websites\u00a0—",h1g:"anything that makes your work easier",hp:"I’m a developer from Dushanbe. I build complete solutions, from idea to launch.",order:"Order a project",cv:"Resume & experience",tg:"Message on Telegram",
-st:[["5+","years of experience"],["3+","projects"],["4","directions"]],
-dirs:[["🤖","Telegram bots","Sales, support and notifications in Python"],["⚙️","Automation","I remove routine and save your time"],["📱","Flutter apps","Android and iOS from one codebase"],["🌐","Websites","High-level sites and admin panels"]],
+st:[["5","portfolio projects"],["4","service areas"],["3","site languages"]],
+dirs:[["🤖","Telegram bots","Bots for business tasks built with Python"],["⚙️","Automation","Reducing repetitive tasks"],["📱","Flutter apps","Mobile apps built with Flutter"],["🌐","Websites","Business websites and admin panels"]],
 ch:"Got an idea? Let’s build it",cp:"Message me and we’ll discuss the task and timeline.",
 pt:"Projects",pp:"Selected work. More projects are coming.",soon:"Link soon",visit:"Open site",
 pr:[["📦","WarePro","Flutter","Mobile app that automates wholesale business: tracks everything from goods arrival to dispatch.",["Flutter","Mobile"],0],["🧠","Intellect Arena","Flutter","Educational game for young people that boosts knowledge and lets friends compete.",["Flutter","Game"],0],["🏠","imkon.estate","Web","Real-estate buying and selling website with a full admin panel.",["Web","Admin panel"],"https://imkon.estate"]],
 sv:"Services",sp:"How I can help",
 svc:[["🤖","Telegram bots","Bots for sales, orders, support and mailings."],["⚙️","Automation","Automating business processes and routine tasks."],["📱","Mobile apps","Flutter apps for Android and iOS."],["🌐","Websites","Landing pages, business sites, admin panels."],["✨","And more","Any solution that makes your work easier."]],
 steps:["1. Task","2. Build","3. Delivery"],
-at:"About me",story:"I started programming in 11th grade and now have about 5 years of hands-on experience. I build Telegram bots, automation, mobile apps and websites.",edh:"Education",edu:"International University of Tourism and Entrepreneurship of Tajikistan. Born in 2005.",skh:"Skills",dl:"Download resume (soon)",
+at:"About me",story:"I’m a developer from Dushanbe. I build Telegram bots, automate tasks, and develop mobile apps and websites. I focus on practical, clear solutions that address real needs.",edh:"Education",edu:"International University of Tourism and Entrepreneurship of Tajikistan.",skh:"Skills",dl:"Contact me",
 ct:"Contact",ctp:"Reach out in any way you like — I reply quickly.",loc:"Dushanbe, Tajikistan"}};
 var W={"WarePro":"https://muhammadqurbonov.github.io/warepro/","imkon.estate":"https://imkon.estate"};
 var BD={ru:"Проект на Flutter, доступный онлайн прямо в браузере.",tg:"Проект бо Flutter, ки мустақиман дар браузер кор мекунад.",en:"A Flutter project that runs online right in your browser."};
