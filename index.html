@@ -99,6 +99,9 @@ header{transition:box-shadow .3s}header.sc{box-shadow:0 8px 28px rgba(15,42,36,.
 .orbit span:nth-child(1){top:0;left:50%}.orbit span:nth-child(2){top:50%;left:100%}.orbit span:nth-child(3){top:100%;left:50%}.orbit span:nth-child(4){top:50%;left:0}
 @media(max-width:760px){.bar{gap:10px;padding:12px 16px}.logo{width:100%;margin-right:0}nav{width:100%;padding-bottom:2px}nav a{padding:7px 12px}.tools{width:100%;gap:6px}.hero{grid-template-columns:1fr;gap:18px}.av{order:-1;width:160px;font-size:42px}main{padding:20px 16px 40px}.st{gap:8px}.st div{padding:12px 4px}.st b{font-size:25px}.cta{padding:28px 16px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+#about p{margin:0 0 14px;line-height:1.7}
+#about .card h3{margin-bottom:6px}
+#why{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 </style>
 </head>
 <body>
@@ -122,10 +125,18 @@ header{transition:box-shadow .3s}header.sc{box-shadow:0 8px 28px rgba(15,42,36,.
 </section>
 <section class="pg" id="projects"><h2 data-i="pt"></h2><p data-i="pp"></p><div class="grid" id="pl"></div></section>
 <section class="pg" id="services"><h2 data-i="sv"></h2><p data-i="sp"></p><div class="grid" id="svl"></div><div class="steps" id="steps"></div></section>
-<section class="pg" id="about"><h2 data-i="at"></h2><p data-i="story"></p>
+<section class="pg" id="about">
+<h2 data-i="at"></h2>
+<p data-i="story" style="max-width:720px;margin-bottom:20px"></p>
+<div class="card" style="margin:22px 0;padding:22px">
+  <h3 data-i="whyh" style="margin-top:0"></h3>
+  <div class="grid" id="why" style="margin:14px 0 0"></div>
+</div>
 <div class="card" style="margin:18px 0"><h3 data-i="edh"></h3><p data-i="edu"></p></div>
-<h3 data-i="skh"></h3><div class="sk" id="sk"></div>
-<div class="btns"><a class="btn p" href="#contact" data-i="dl"></a></div></section>
+<h3 data-i="skh"></h3>
+<div class="sk" id="sk"></div>
+<div class="btns" style="margin-top:24px"><a class="btn p" href="#contact" data-i="dl"></a></div>
+</section>
 <section class="pg" id="contact"><h2 data-i="ct"></h2><p data-i="ctp"></p>
 <div class="grid">
 <a class="card" style="text-decoration:none;color:inherit" href="https://t.me/m_qurbonov10" target="_blank" rel="noopener"><div class="ic">✈️</div><h3>Telegram</h3><p>@m_qurbonov10</p></a>
@@ -137,7 +148,7 @@ header{transition:box-shadow .3s}header.sc{box-shadow:0 8px 28px rgba(15,42,36,.
 </main>
 <footer>© 2026 Senova Tech · <span id="nm"></span> · <span data-i="loc"></span></footer>
 <script>
-var NM={ru:"Қурбонов Муҳаммадшариф",tg:"Қурбонов Муҳаммадшариф",en:"Qurbonov Muhammadsharif"};
+var NM={ru:"Қурбонов Муҳаммад",tg:"Қурбонов Муҳаммад",en:"Qurbonov Muhammad"};
 var T={
 ru:{nav:["Главная","Проекты","Услуги","Обо мне","Контакты"],badge:"Открыт для фриланса и постоянной работы",h1:"Telegram-боты, приложения и сайты\u00a0—",h1g:"всё, что упрощает вашу работу",hp:"Я программист из Душанбе. Создаю решения под ключ: от идеи до запуска.",order:"Заказать проект",cv:"Резюме и опыт",tg:"Написать в Telegram",
 st:[["5","проектов"],["4","направления"],["3","языка сайта"]],
@@ -148,7 +159,7 @@ pr:[["📦","WarePro","Flutter","Мобильное приложение для 
 sv:"Услуги",sp:"Как я могу быть полезен",
 svc:[["🤖","Telegram-боты","Боты для продаж, заказов, поддержки и рассылок."],["⚙️","Автоматизация","Автоматизация бизнес-процессов и рутинных задач."],["📱","Мобильные приложения","Приложения на Flutter для Android и iOS."],["🌐","Веб-сайты","Лендинги, корпоративные сайты, админ-панели."],["✨","И не только","Любое решение, которое облегчит вашу работу."]],
 steps:["1. Задача","2. Реализация","3. Сдача проекта"],
-at:"Обо мне",story:"Я разработчик из Душанбе. Создаю Telegram-ботов, автоматизирую задачи, разрабатываю мобильные приложения и веб-сайты. В работе стремлюсь к понятным и практичным решениям.",edh:"Образование",edu:"Международный университет туризма и предпринимательства Таджикистана.",skh:"Навыки",dl:"Связаться со мной",
+at:"Обо мне",story:"Я Муҳаммад Қурбонов — разработчик из Душанбе. Уже 5 лет создаю цифровые решения. Сейчас совмещаю учёбу с разработкой.\n\nМоя главная цель — упрощать работу клиентов. Я делаю Telegram-ботов, мобильные приложения, веб-сайты и системы автоматизации, которые реально экономят время и убирают рутину.\n\nВ работе для меня важны качество и понимание цели клиента. Особенно нравится разрабатывать веб-сайты, мобильные приложения и системы автоматизации. Часто использую Flutter, Dart, HTML/CSS/JS, Firebase, а также Python.\n\nОдин из любимых проектов — WarePro. Это приложение, которое помогает бизнесу вести учёт почти как 1С: от поступления товара до отгрузки. Оно создано, чтобы облегчить жизнь предпринимателям.",whyh:"Почему выбирают меня",why:[["🎯","Решаю задачу бизнеса","Не просто пишу код — решаю конкретную проблему клиента"],["⚡","Работающие решения","Создаю то, что реально экономит время и упрощает работу"],["🎯","Фокус на цели клиента","Всегда держу в фокусе вашу цель, а не только техническую сторону"],["✅","Качество и сроки","Работаю аккуратно, с вниманием к деталям и срокам"]],edh:"Образование",edu:"Международный университет туризма и предпринимательства Таджикистана.",skh:"Навыки",dl:"Связаться со мной",
 ct:"Контакты",ctp:"Свяжитесь удобным способом — отвечу быстро.",loc:"Душанбе, Таджикистан"},
 tg:{nav:["Асосӣ","Проектҳо","Хизматҳо","Дар бораи ман","Тамос"],badge:"Барои фриланс ва кори доимӣ омодаам",h1:"Ботҳои Telegram, барномаҳо ва сайтҳо\u00a0—",h1g:"ҳар чизе, ки корро осон мекунад",hp:"Ман барномасоз аз Душанбе ҳастам. Ҳалли пурра месозам: аз идея то оғози кор.",order:"Супориш диҳед",cv:"Резюме ва таҷриба",tg:"Дар Telegram нависед",
 st:[["5","лоиҳа"],["4","самт"],["3","забони сомона"]],
@@ -159,7 +170,7 @@ pr:[["📦","WarePro","Flutter","Барномаи мобилӣ барои авт
 sv:"Хизматҳо",sp:"Чӣ тавр метавонам кумак кунам",
 svc:[["🤖","Ботҳои Telegram","Боти фурӯш, фармоиш, дастгирӣ ва ирсоли паём."],["⚙️","Автоматизатсия","Автоматикунонии равандҳо ва корҳои такрорӣ."],["📱","Барномаҳои мобилӣ","Барномаҳои Flutter барои Android ва iOS."],["🌐","Вебсайтҳо","Лендинг, сайти корӣ ва админ-панел."],["✨","Ва ғайра","Ҳар ҳалле, ки корро осон кунад."]],
 steps:["1. Масъала","2. Иҷро","3. Таҳвил"],
-at:"Дар бораи ман",story:"Ман барномасоз аз Душанбе ҳастам. Ботҳои Telegram месозам, вазифаҳоро автоматӣ мекунам ва барномаҳои мобилӣ ва вебсайтҳо таҳия менамоям. Ҳадафам сохтани ҳалҳои фаҳмо ва амалӣ аст.",edh:"Таҳсилот",edu:"Донишгоҳи байналмилалии сайёҳӣ ва соҳибкории Тоҷикистон.",skh:"Малакаҳо",dl:"Бо ман тамос гиред",
+at:"Дар бораи ман",story:"Ман Муҳаммад Қурбонов — барномасоз аз Душанбе. Аллакай 5 сол аст, ки ҳалли рақамӣ месозам. Ҳозир таҳсилро бо барноманависӣ якҷоя мекунам.\n\nҲадафи асосии ман — осон кардани кори муштариён аст. Ман ботҳои Telegram, барномаҳои мобилӣ, вебсайтҳо ва системаҳои автоматизатсия месозам, ки вақтро сарфа мекунанд ва корҳои такрориро кам мекунанд.\n\nДар кор барои ман сифат ва фаҳмидани ҳадафи мизоҷ муҳим аст. Махсусан вебсайтҳо, барномаҳои мобилӣ ва системаҳои автоматизатсияро дӯст медорам. Амалан аз Flutter, Dart, HTML/CSS/JS, Firebase ва баъзан Python истифода мебарам.\n\nЯке аз лоиҳаҳои дӯстдоштаам — WarePro. Ин барнома ба бизнес кӯмак мекунад, ки ҳисоб-китобро тақрибан монанди 1С пеш барад: аз омадани мол то фиристодани он. Он барои осон кардани кори соҳибкорон сохта шудааст.",whyh:"Чаро маро интихоб мекунанд",why:[["🎯","Масъалаи бизнесро ҳал мекунам","Танҳо код наменависам — масъалаи мушаххаси мизоҷро ҳал мекунам"],["⚡","Ҳалҳои коркунанда","Он чизеро месозам, ки вақтро сарфа мекунад ва корро осон мекунад"],["🎯","Ҳадафи мизоҷ дар марказ","Ҳамеша ҳадафи шуморо дар назар мегирам, на танҳо ҷиҳати техникӣ"],["✅","Сифат ва муҳлат","Бодиққат, бо эҳтиром ба муҳлат ва сифат кор мекунам"]],edh:"Таҳсилот",edu:"Донишгоҳи байналмилалии сайёҳӣ ва соҳибкории Тоҷикистон.",skh:"Малакаҳо",dl:"Бо ман тамос гиред",
 ct:"Тамос",ctp:"Бо роҳи қулай тамос гиред — зуд ҷавоб медиҳам.",loc:"Душанбе, Тоҷикистон"},
 en:{nav:["Home","Projects","Services","About","Contact"],badge:"Open to freelance and full-time work",h1:"Telegram bots, apps and websites\u00a0—",h1g:"anything that makes your work easier",hp:"I’m a developer from Dushanbe. I build complete solutions, from idea to launch.",order:"Order a project",cv:"Resume & experience",tg:"Message on Telegram",
 st:[["5","portfolio projects"],["4","service areas"],["3","site languages"]],
@@ -170,7 +181,7 @@ pr:[["📦","WarePro","Flutter","Mobile app that automates wholesale business: t
 sv:"Services",sp:"How I can help",
 svc:[["🤖","Telegram bots","Bots for sales, orders, support and mailings."],["⚙️","Automation","Automating business processes and routine tasks."],["📱","Mobile apps","Flutter apps for Android and iOS."],["🌐","Websites","Landing pages, business sites, admin panels."],["✨","And more","Any solution that makes your work easier."]],
 steps:["1. Task","2. Build","3. Delivery"],
-at:"About me",story:"I’m a developer from Dushanbe. I build Telegram bots, automate tasks, and develop mobile apps and websites. I focus on practical, clear solutions that address real needs.",edh:"Education",edu:"International University of Tourism and Entrepreneurship of Tajikistan.",skh:"Skills",dl:"Contact me",
+at:"About me",story:"I’m Muhammad Qurbonov — a developer from Dushanbe. I’ve been building digital solutions for 5 years. Currently I combine my studies with development work.\n\nMy main goal is to make my clients’ work easier. I create Telegram bots, mobile apps, websites and automation systems that actually save time and remove routine tasks.\n\nIn my work I focus on quality and understanding the client’s real goal. I especially enjoy building websites, mobile apps and business process automation. I mainly work with Flutter, Dart, HTML/CSS/JS, Firebase, and sometimes Python.\n\nOne of my favourite projects is WarePro. It’s an app that helps businesses keep records almost like 1C — from goods arrival to dispatch. It was built to make life easier for entrepreneurs.",whyh:"Why clients choose me",why:[["🎯","I solve business problems","I don’t just write code — I solve a specific client problem"],["⚡","Solutions that work","I build things that actually save time and make work easier"],["🎯","Client goal first","I always keep your goal in focus, not only the technical side"],["✅","Quality & deadlines","I work carefully, with attention to detail and deadlines"]],edh:"Education",edu:"International University of Tourism and Entrepreneurship of Tajikistan.",skh:"Skills",dl:"Contact me",
 ct:"Contact",ctp:"Reach out in any way you like — I reply quickly.",loc:"Dushanbe, Tajikistan"}};
 var W={"Intellect Arena":"https://muhammadqurbonov.github.io/intellect_arena/","WarePro":"https://muhammadqurbonov.github.io/warepro/","imkon.estate":"https://imkon.estate"};
 var BD={ru:"Проект на Flutter, доступный онлайн прямо в браузере.",tg:"Проект бо Flutter, ки мустақиман дар браузер кор мекунад.",en:"A Flutter project that runs online right in your browser."};
@@ -203,7 +214,16 @@ var SK=["Python","aiogram","Flutter","Dart","Web","Admin panels","Automation","A
 var L="ru",$=function(s){return document.querySelector(s)};
 try{L=localStorage.getItem("lang")||"ru"}catch(e){}
 function R(){var t=T[L];document.documentElement.lang=L==="tg"?"tg":L;
-document.querySelectorAll("[data-i]").forEach(function(e){e.textContent=t[e.dataset.i]});
+document.querySelectorAll("[data-i]").forEach(function(e){
+  var key=e.dataset.i;
+  if(key==="story" && t[key]){e.innerHTML=t[key].replace(/\\n\\n/g,"</p><p style=\"margin:0 0 14px\">").replace(/\\n/g,"<br>"); e.innerHTML="<p style=\"margin:0 0 14px\">"+e.innerHTML+"</p>";}
+  else if(t[key]!==undefined){e.textContent=t[key];}
+});
+if(t.why && $("#why")){
+  $("#why").innerHTML=t.why.map(function(d){
+    return '<div class="card"><div class="ic">'+d[0]+'</div><h3>'+d[1]+'</h3><p>'+d[2]+'</p></div>';
+  }).join("");
+}
 $("#nm").textContent=NM[L];
 var ids=["home","projects","services","about","contact"];
 $("#nav").innerHTML=ids.map(function(id,i){return '<a href="#'+id+'" data-p="'+id+'">'+t.nav[i]+"</a>"}).join("");
