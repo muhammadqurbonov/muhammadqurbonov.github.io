@@ -1,5 +1,5 @@
 /* Senova CRM page: renderer. Texts live in crm-content.js */
-var CS = ["assets/img/crm-1.jpg", "assets/img/crm-2.jpg", "assets/img/crm-3.jpg", "assets/img/crm-4.jpg", "assets/img/crm-5.jpg"];
+var CS = ["crm-1.jpg", "crm-2.jpg", "crm-3.jpg", "crm-4.jpg", "crm-5.jpg"];
 
 function crmCards(list) {
   return list.map(function (d) {
